@@ -1,27 +1,23 @@
 import React, { useState } from 'react';
 import Consulta from './Consulta';
 
-const Calendar = ({search}) => {
-    const [calendar, setCalendar] = useState([]);
-
+const Calendar = ({calendar, search}) => {
 
     return (
         <>
             {calendar.map( (consulta) =>
                 <>
-                    <>
-                        {search ? (
-                            <>
-                                {search ? (
-                                    <Consulta consulta = {consulta}/> 
-                                ) : (
-                                    <></>
-                                )}
-                            </>
-                        ) : (
-                            <Consulta consulta = {consulta}/>
-                        )}
-                    </>
+                    {search ? (
+                        <>
+                            {search ? (
+                                <Consulta consulta = {consulta}/> 
+                            ) : (
+                                <></>
+                            )}
+                        </>
+                    ) : (
+                        <Consulta consulta = {consulta}/>
+                    )}
                 </>
             )}
         </>
