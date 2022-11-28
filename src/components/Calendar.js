@@ -1,8 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Consulta from './Consulta';
 
 const Calendar = ({calendar, search, reservations, seterservations, triggerReservs, setTriggerReservs}) => {
-
     return (
         <>
             <div className='row'>
@@ -10,7 +9,10 @@ const Calendar = ({calendar, search, reservations, seterservations, triggerReser
                     <>
                         {search ? (
                             <>
-                                {search ? (
+                                {consulta.doctor.search(search) !== -1 || 
+                                consulta.field.search(search) !== -1 || 
+                                consulta.date.search(search) !== -1 || 
+                                consulta.schedule.search(search) !== -1 ? (
                                     <Consulta 
                                         key = {consulta.id} 
                                         consulta = {consulta}

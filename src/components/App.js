@@ -11,14 +11,14 @@ function App() {
   const [creating, setCreating] = useState(false);
   const [seeReservs, setSeeReservs] = useState(false);
 
-  const [users, setUsers] = useState([{user : "Emilio", reservs : []}]);
+  const [users, setUsers] = useState([{user : "Emilio", reservs : []}, {user : "Carlos", reservs : []}]);
   const [index, setIndex] = useState(-1);
   const [user, setUser] = useState("");
   const [reservations, setResevations] = useState([]);
   const [triggerReservs, setTriggerReservs] = useState(false);
 
   const [calendar, setCalendar] = useState([]);
-  const [search, setSeacrh] = useState("");
+  const [search, setSearch] = useState("");
 
   function searchUser(){
     let indice = -1;
@@ -38,22 +38,23 @@ function App() {
   useEffect (() => {
     if(user !== ""){
       setIndex(searchUser());
-      if(index >= 0){
-        setResevations(users[index].reservs);
+      if(searchUser() >= 0){
+        setResevations(users[searchUser()].reservs);
       }
       else{
         // creacion usuario
       }
     }
-  }, [user, users])
+    else{
+      setIndex(-1);
+    }
+  }, [user])
 
   useEffect (() => {
     if(index >= 0){
-      console.log(users[index].reservs);
       users[index].reservs = reservations;
-      console.log(reservations);
     }
-  }, [reservations, index, users])
+  }, [reservations, triggerReservs])
 
   return (
     <>
@@ -66,7 +67,7 @@ function App() {
               seeReservs = {seeReservs} 
               setSeeReservs = {setSeeReservs} 
               search = {search} 
-              setSeacrh = {setSeacrh} 
+              setSearch = {setSearch} 
               setLogged = {setLogged}
               setUser = {setUser}
               setCreating = {setCreating}

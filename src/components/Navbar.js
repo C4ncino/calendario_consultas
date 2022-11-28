@@ -8,7 +8,7 @@ const Navbar = ({user, seeReservs, setSeeReservs, search, setSearch, setLogged, 
 
     const onChange = (e) => {
         if (e.target.name === "search"){
-            setSearch(e.target.value);
+            setSearch(e.target.value);  
         }
     };
 
