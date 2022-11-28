@@ -5,29 +5,11 @@ const Day = ({calendar, day, search, reservations, setReservations, triggerReser
     return (
         <>
             <div className='row'>
+                <h4>---------{day}---------</h4>
                 {calendar.map( (consulta) =>
                     <>
                         {consulta.date === day ? (
                             <>
-                            {search ? (
-                                <>
-                                    {consulta.doctor.search(search) !== -1 || 
-                                    consulta.field.search(search) !== -1 || 
-                                    consulta.date.search(search) !== -1 || 
-                                    consulta.schedule.search(search) !== -1 ? (
-                                        <Consulta 
-                                            key = {consulta.id} 
-                                            consulta = {consulta}
-                                            reservations = {reservations}
-                                            setReservations = {setReservations}
-                                            triggerReservs = {triggerReservs}
-                                            setTriggerReservs = {setTriggerReservs}
-                                        /> 
-                                    ) : (
-                                        <></>
-                                    )}
-                                </>
-                            ) : (
                                 <Consulta 
                                     key = {consulta.id} 
                                     consulta = {consulta}
@@ -36,7 +18,6 @@ const Day = ({calendar, day, search, reservations, setReservations, triggerReser
                                     triggerReservs = {triggerReservs}
                                     setTriggerReservs = {setTriggerReservs}
                                 />
-                            )}
                             </>
                         ) :(
                             <></>
