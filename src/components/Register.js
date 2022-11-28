@@ -121,12 +121,12 @@ const Register = ({setUser, setLogged, setCreating}) => {
 			):(
 				<p></p>
 			)}
-			{errMsgP ? (
+			{errMsgP && p_input ? (
 				<p>{errMsgP}</p>
 			) : (
 				<></>
 			)}
-			{errMsgM ? (
+			{errMsgM && e_input ? (
 				<p>{errMsgM}</p>
 			) : (
 				<></>
