@@ -44,19 +44,15 @@ const Login = ({setUser, setLogged, setCreating, users = []}) => {
 				<h4>Password</h4>
 				<input type="password" id = "password_input" name = "password_input" value = {p_input} onChange = {onChange} />
 			</div>
-			<p/>
 			{u_input && p_input ? (
 				<div className='form-group p-2'>
 					<button onClick={Check} className='btn btn-info'>Ingresar</button>
 				</div>
 			):(
-				<></>
+				<p></p>
 			)}
-			<p/>
 			<p>----- o -----</p>
-			<div className='form-group p-2'>
-				<button onClick={() => {setCreating(true)}} className='btn btn-info'>Crear Cuenta</button>
-			</div>
+			<button onClick={() => {setCreating(true)}} className='btn btn-info'>Crear Cuenta</button>
 		</div>
 	);
 };

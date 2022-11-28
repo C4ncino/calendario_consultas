@@ -96,7 +96,7 @@ function App() {
           <>
             {creating ? (
               <>
-                <Register setUser = {setUser} setLogged = {setLogged}/>
+                <Register setUser = {setUser} setLogged = {setLogged} setCreating = {setCreating}/>
               </>
               ):(
               <>
