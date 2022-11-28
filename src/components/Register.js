@@ -108,7 +108,7 @@ const Register = ({setUser, setLogged, setCreating}) => {
 			</div>
 			<div className='form-group p-2'>
 				<h4>Password</h4>
-				<input type="text" id = "password_input" name = "password_input" value = {p_input} onChange = {onChange} />
+				<input type="password" id = "password_input" name = "password_input" value = {p_input} onChange = {onChange} />
 			</div>
 			<div className='form-group p-2'>
 				<h4>Email</h4>
