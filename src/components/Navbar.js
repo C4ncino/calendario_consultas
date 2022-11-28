@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({user, seeReservs, setSeeReservs, search, setSearch, setLogged}) => {
+const Navbar = ({user, seeReservs, setSeeReservs, search, setSearch, setLogged, setUser, setCreating}) => {
 
     function cambioPagina(){
         setSeeReservs(!seeReservs);
@@ -20,14 +20,14 @@ const Navbar = ({user, seeReservs, setSeeReservs, search, setSearch, setLogged})
                 {seeReservs ? (
                     <button 
                         onClick={cambioPagina} 
-                        className='btn btn-outline-danger tbn-sm text-center m-2'
+                        className='btn btn-outline-info tbn-sm text-center m-2'
                     >
-                        Clanedario
+                        Calendario
                     </button>
                 ) : (
                     <button 
                         onClick={cambioPagina} 
-                        className='btn btn-outline-danger tbn-sm text-center m-2'
+                        className='btn btn-outline-info tbn-sm text-center m-2'
                     >
                         Reservas
                     </button>
@@ -38,23 +38,24 @@ const Navbar = ({user, seeReservs, setSeeReservs, search, setSearch, setLogged})
                     name = "search" 
                     id = "search"
                     placeholder="Buscar..."
-                    className='form-control m-2'
+                    className='form-control m-2 s-30'
                     value = {search}
                     onChange = {onChange} 
                 />
 
                 <div>
-                    <div>
-                        <label>Hola, {user}</label>
-                    </div>
-                    <div>
-                        <button 
-                            onClick={() => {setLogged(false)}} 
-                            className='btn btn-outline-danger tbn-sm text-center m-2'
-                        >
-                            Cerrar Sesion
-                        </button>
-                    </div>
+                    <label>Hola, {user}</label>
+
+                    <button 
+                        onClick={() => {
+                            setLogged(false);
+                            setCreating(false);
+                            setUser("");
+                        }} 
+                        className='btn btn-outline-info tbn-sm text-center m-2'
+                    >
+                        Cerrar Sesion
+                    </button>
                 </div>  
 
             </nav>

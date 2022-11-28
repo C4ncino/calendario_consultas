@@ -55,14 +55,14 @@ const Register = ({setUser, setLogged}) => {
 
     const Send = () => {
 		if (u_input){
-			setUser(u_input);
+			setUser(u_input)
 		}
         setLogged(true);
 	};
 
 	return (
 		<div className='container-fluid text-center bg-ligth'>
-			<h1 className='text-danger py-4'>Register</h1>
+			<h1 className='text-info py-4'>Register</h1>
 			<div className='form-group p-2'>
 				<h4>Username</h4>
 				<input id = "user_input" name = "user_input" value = {u_input} onChange = {onChange} />
@@ -78,7 +78,7 @@ const Register = ({setUser, setLogged}) => {
 			<p/>
 			{u_input && minLength && hasCapital && hasNumber && isEmail ? (
 				<div className='form-group p-2'>
-					<button onClick={Send} className='btn btn-danger'>Crear Cuenta</button>
+					<button onClick={Send} className='btn btn-info'>Crear Cuenta</button>
 				</div>
 			):(
 				<></>

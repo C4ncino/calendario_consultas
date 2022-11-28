@@ -35,7 +35,7 @@ const Login = ({setUser, setLogged, setCreating, users = []}) => {
 
 	return (
 		<div className='container-fluid text-center bg-ligth'>
-			<h1 className='text-danger py-4'>Login</h1>
+			<h1 className='text-info py-4'>Login</h1>
 			<div className='form-group p-2'>
 				<h4>Username</h4>
 				<input id = "user_input" name = "user_input" value = {u_input} onChange = {onChange} />
@@ -47,14 +47,15 @@ const Login = ({setUser, setLogged, setCreating, users = []}) => {
 			<p/>
 			{u_input && p_input ? (
 				<div className='form-group p-2'>
-					<button onClick={Check} className='btn btn-danger'>Ingresar</button>
+					<button onClick={Check} className='btn btn-info'>Ingresar</button>
 				</div>
 			):(
 				<></>
 			)}
 			<p/>
+			<p>----- o -----</p>
 			<div className='form-group p-2'>
-				<button onClick={() => {setCreating(true)}} className='btn btn-danger'>Crear Cuenta</button>
+				<button onClick={() => {setCreating(true)}} className='btn btn-info'>Crear Cuenta</button>
 			</div>
 		</div>
 	);
