@@ -11,7 +11,7 @@ function App() {
   const [creating, setCreating] = useState(false);
   const [seeReservs, setSeeReservs] = useState(false);
 
-  const [users, setUsers] = useState([{user : "Emilio", reservs : []}, {user : "Carlos", reservs : []}]);
+  const [users, setUsers] = useState([{"user" : "Emilio", "reservs" : []}, {"user" : "Carlos", "reservs" : []}]);
   const [index, setIndex] = useState(-1);
   const [user, setUser] = useState("");
   const [reservations, setResevations] = useState([]);
@@ -42,13 +42,15 @@ function App() {
         setResevations(users[searchUser()].reservs);
       }
       else{
-        // creacion usuario
+        let newUser = {"user" : user, "reservs" : []};
+        setUsers([...users, newUser]);
       }
     }
     else{
       setIndex(-1);
+      setSearch("");
     }
-  }, [user])
+  }, [user, users])
 
   useEffect (() => {
     if(index >= 0){
@@ -58,7 +60,6 @@ function App() {
 
   return (
     <>
-      
       <div className='container-fluid text-center bg-ligth'>
         {logged ? (
           <>

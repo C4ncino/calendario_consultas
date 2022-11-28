@@ -41,7 +41,7 @@ const Consulta = ({consulta, reservations, seterservations, triggerReservs, setT
                             <>
                                 {haveReservation() ? (
                                     <li key={'boton'} className='list-group-item'>
-                                        <button className='btn btn-info' onClick={remove}>
+                                        <button className='btn btn-danger' onClick={remove}>
                                             Eliminar
                                         </button>
                                     </li>

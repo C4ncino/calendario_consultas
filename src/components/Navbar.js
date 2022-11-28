@@ -15,7 +15,7 @@ const Navbar = ({user, seeReservs, setSeeReservs, search, setSearch, setLogged, 
     return ( 
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light justify-content-center p-1">
-                <button className='btn navbar-brand' onClick={() => {seeReservs(false)}}>NAME</button>
+                <button className='btn navbar-brand' onClick={() => {setSeeReservs(false)}}>NAME</button>
 
                 {seeReservs ? (
                     <button 

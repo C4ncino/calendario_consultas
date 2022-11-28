@@ -2,7 +2,7 @@
     {
         "id" : "0",
         "doctor" : "Dr. Name A",
-        "field" : "Especialidad",
+        "field" : "Oftalmología",
         "rating" : "9/10",
         "date" : "28-11-2022",
         "schedule" : "11:00-13:00",
@@ -10,122 +10,122 @@
     },{
         "id" : "1",
         "doctor" : "Dr. Name B",
-        "field" : "Especialidad",
+        "field" : "Cardiología",
         "rating" : "9/10",
         "date" : "28-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "12:00-13:00",
         "taken" : "0"
     },{
         "id" : "2",
         "doctor" : "Dr. Name C",
-        "field" : "Especialidad",
+        "field" : "Pedriatría",
         "rating" : "9/10",
         "date" : "28-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "14:00-16:00",
         "taken" : "0"
     },{
         "id" : "3",
         "doctor" : "Dr. Name D",
-        "field" : "Especialidad",
+        "field" : "Ginecología",
         "rating" : "9/10",
         "date" : "29-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "09:00-11:00",
         "taken" : "0"
     },{
         "id" : "4",
         "doctor" : "Dr. Name D",
-        "field" : "Especialidad",
+        "field" : "Ginecología",
         "rating" : "10/10",
         "date" : "29-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "10:00-12:00",
         "taken" : "0"
     },{
         "id" : "5",
         "doctor" : "Dr. Name E",
-        "field" : "Especialidad",
+        "field" : "Medicina Interna",
         "rating" : "10/10",
         "date" : "29-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "15:00-16:00",
         "taken" : "0"
     },{
         "id" : "6",
         "doctor" : "Dr. Name E",
-        "field" : "Especialidad",
+        "field" : "Medicina Interna",
         "rating" : "10/10",
         "date" : "30-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "08:00-10:00",
         "taken" : "0"
     },{
         "id" : "7",
         "doctor" : "Dr. Name A",
-        "field" : "Especialidad",
+        "field" : "Oftalmología",
         "rating" : "10/10",
         "date" : "30-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "09:30-11:30",
         "taken" : "0"
     },{
         "id" : "8",
         "doctor" : "Dr. Name A",
-        "field" : "Especialidad",
+        "field" : "Oftalmología",
         "rating" : "7/10",
         "date" : "31-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "10:00-12:00",
         "taken" : "0"
     },{
         "id" : "9",
         "doctor" : "Dr. Name C",
-        "field" : "Especialidad",
+        "field" : "Pedriatría",
         "rating" : "7/10",
         "date" : "31-11-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "11:00-12:30",
         "taken" : "0"
     },{
         "id" : "10",
         "doctor" : "Dr. Name C",
-        "field" : "Especialidad",
+        "field" : "Pedriatría",
         "rating" : "7/10",
         "date" : "1-12-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "09:00-10:30",
         "taken" : "0"
     },{
         "id" : "11",
         "doctor" : "Dr. Name B",
-        "field" : "Especialidad",
+        "field" : "Cardiología",
         "rating" : "8/10",
         "date" : "1-12-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "11:00-12:00",
         "taken" : "0"
     },{
         "id" : "12",
         "doctor" : "Dr. Name E",
-        "field" : "Especialidad",
+        "field" : "Medicina Interna",
         "rating" : "8/10",
         "date" : "2-12-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "08:00-10:00",
         "taken" : "0"
     },{
         "id" : "13",
         "doctor" : "Dr. Name D",
-        "field" : "Especialidad",
+        "field" : "Ginecología",
         "rating" : "8/10",
         "date" : "2-12-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "9:30-11:00",
         "taken" : "0"
     },{
         "id" : "14",
         "doctor" : "Dr. Name B",
-        "field" : "Especialidad",
+        "field" : "Cardiología",
         "rating" : "7/10",
         "date" : "2-12-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "15:00-16:30",
         "taken" : "0"
     },{
         "id" : "15",
         "doctor" : "Dr. Name B",
-        "field" : "Especialidad",
+        "field" : "Cardiología",
         "rating" : "7/10",
         "date" : "3-12-2022",
-        "schedule" : "11:00-13:00",
+        "schedule" : "16:00-17:30",
         "taken" : "0"
     }
 ]
