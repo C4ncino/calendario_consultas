@@ -125,7 +125,15 @@
         "field" : "Cardiología",
         "rating" : "7/10",
         "date" : "3-12-2022",
-        "schedule" : "16:00-17:30",
+        "schedule" : "14:00-15:30",
+        "taken" : "0"
+    },{
+        "id" : "16",
+        "doctor" : "Dr. Name A",
+        "field" : "Oftalmología",
+        "rating" : "9/10",
+        "date" : "3-12-2022",
+        "schedule" : "11:00-17:30",
         "taken" : "0"
     }
 ]
