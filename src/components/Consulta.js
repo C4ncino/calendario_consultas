@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const Consulta = ({consulta, reservations, seterservations, triggerReservs, setTriggerReservs}) => {
+const Consulta = ({consulta, reservations, setReservations, triggerReservs, setTriggerReservs}) => {
     
     const [trigger, setTrigger] = useState(true);
 
@@ -8,7 +8,7 @@ const Consulta = ({consulta, reservations, seterservations, triggerReservs, setT
     }, [reservations, trigger])
 
     function add(){
-        seterservations([...reservations, consulta])
+        setReservations([...reservations, consulta])
         consulta.taken = "1";
     }
     function remove(){

@@ -77,7 +77,7 @@ function App() {
               <MyReservations 
                 calendar = {calendar} 
                 reservations = {reservations} 
-                seterservations = {setResevations}
+                setReservations = {setResevations}
                 triggerReservs = {triggerReservs}
                 setTriggerReservs = {setTriggerReservs}
               />
@@ -86,7 +86,7 @@ function App() {
                 calendar = {calendar} 
                 search = {search} 
                 reservations = {reservations} 
-                seterservations = {setResevations}
+                setReservations = {setResevations}
                 triggerReservs = {triggerReservs}
                 setTriggerReservs = {setTriggerReservs}
               />

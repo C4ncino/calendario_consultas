@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import Consulta from './Consulta';
 
-const MyReservations = ({calendar, reservations, seterservations, triggerReservs, setTriggerReservs}) => {
+const MyReservations = ({calendar, reservations, setReservations, triggerReservs, setTriggerReservs}) => {
     
     useEffect(() => {
     }, [triggerReservs])
@@ -18,7 +18,7 @@ const MyReservations = ({calendar, reservations, seterservations, triggerReservs
                                         key = {reservation.id} 
                                         consulta = {reservation}
                                         reservations = {reservations}
-                                        seterservations = {seterservations}
+                                        setReservations = {setReservations}
                                         triggerReservs = {triggerReservs}
                                         setTriggerReservs = {setTriggerReservs}
                                     />
